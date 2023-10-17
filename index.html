@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@400&display=swap" rel="stylesheet">
+    <style>
+
+      .header{
+        display: flex;
+        gap: 20px;
+        padding: 30px;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .carousel-inner{
+        width: auto;
+      }
+
+      h1{
+        font-family: 'Lemonada', cursive;
+      }
+
+      .main1{
+
+        padding: 20px;
+        display: grid;
+        gap: 40px;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr, 1fr;
+        grid-template-rows: 1fr, 1fr;
+        margin-inline-start: 140px;
+        margin-inline-end: 140px;
+  
+      }
+
+      p{
+        font-family: 'Lemonada', cursive;
+      }
+
+    #myCarousel{
+      width: 600px;
+    
+    }
+
+    #myCarousel{
+      width: 800px;
+    }
+
+    .groupPic{
+
+          width: 800px;
+          height: 550px;
+        }
+
+    .picslide{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+      @media (max-width: 900px) {
+
+        .main1{
+          grid-auto-flow: row;
+          margin-inline-start: 10px;
+          margin-inline-end: 10px;
+          margin: 0px;
+        }
+
+        .images{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .groupPic{
+         width: 400px;
+        height: 275px;
+      }
+
+      #myCarousel{
+      width: 400px;
+    }
+
+        
+        
+      }
+    </style>
+</head>
+I
+<body>
+    
+  <div class="header">
+ 
+    <img src="./sc.png" width="80px" height="80px">
+  
+    
+    <h1>HAPPY BIRTHDAY SMART COOKIE !! </h1>
+  </div>
+
+
+  <div class="main1">
+
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    
+      <div class="images">
+  <img src="./rr2.jpg" width="500px"/>
+  </div>
+
+  </div>
+
+
+  <div class="main1">
+    <div class="images">
+    <img src="./rv1.jpg" width="500px"/>
+    </div>
+
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+  </div>
+
+
+  <div class="picslide">
+
+ 
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+       
+        <div class="container">
+        
+           <img class="groupPic" src="gp4.jpg" >
+        
+        </div>
+      </div>
+      <div class="carousel-item active">
+       
+        <div class="container">
+          <img class="groupPic"  src="gp3.jpg" >
+        </div>
+      </div>
+      <div class="carousel-item">
+       
+        <div class="container">
+          <img class="groupPic"  src="gp2.jpg" >
+        </div>
+      </div>
+
+      <div class="carousel-item">
+       
+        <div class="container">
+          <img class="groupPic"  src="gp1.jpg" >
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
